@@ -420,7 +420,8 @@ leading to failure in application system.</p>
                         <div class="col-12">
                             <div class="contact-form">
                                 <div id="success"></div>
-                                <form name="sentMessage" id="contactForm" novalidate="novalidate" data-netlify="true">
+
+                                <form name="sentMessage" id="contactForm" method="POST" data-netlify="true">
                                     <div class="form-row">
                                         <div class="control-group col-sm-6">
                                             <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
@@ -445,7 +446,7 @@ leading to failure in application system.</p>
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div>
-                                        <button class="btn btn-primary py-3 px-4" type="submit" id="sendMessageButton">Send Message</button>
+                                        <button class="btn btn-primary py-3 px-4" type="submit">Send Message</button>
                                     </div>
                                 </form>
                             </div>
@@ -455,7 +456,27 @@ leading to failure in application system.</p>
                 <!-- Contact End -->
 
 
-                
+<!--<form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>   
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+   -->             
                 
                 <!-- Footer Start -->
                 <div class="container-fluid bg-white pt-5 px-0">
