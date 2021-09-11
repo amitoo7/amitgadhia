@@ -421,29 +421,44 @@ leading to failure in application system.</p>
                             <div class="contact-form">
                                 <div id="success"></div>
 
-                                <form name="sentMessage" id="contactForm" method="POST" data-netlify="true">
-                                    <div class="form-row">
-                                        <div class="control-group col-sm-6">
-                                            <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
+                                <form name="contact" method="POST" data-netlify="true">
+                                    <div >
+                                        <div col-sm-6>
+                                            <p>
+                                                <input name="name" type="text" class="form-control p-4" id="name" placeholder="Your Name"
+                                                    required="required" />   
+                                              </p>
+                                           <!-- <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
                                                 required="required" data-validation-required-message="Please enter your name" />
                                             <p class="help-block text-danger"></p>
+                                            -->
                                         </div>
-                                        <div class="control-group col-sm-6">
-                                            <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
+                                        <div col-sm-6>
+                                            <input name="email" type="email" class="form-control p-4" id="email" placeholder="Your Email"
+                                                required="required" />
+                                        <!--    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
                                                 required="required" data-validation-required-message="Please enter your email" />
                                             <p class="help-block text-danger"></p>
+                                        -->
                                         </div>
                                     </div>
-                                    <div class="control-group">
+<!--                                    <div class="control-group">
                                         <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
                                             required="required" data-validation-required-message="Please enter a subject" />
                                         <p class="help-block text-danger"></p>
                                     </div>
-                                    <div class="control-group">
-                                        <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+-->                                    
+                                    <!--<div class="control-group"> -->
+                                        <div>
+                                        <p>
+                                            <textarea name="message" class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+                                                required="required" ></textarea>
+                                        </p >
+                                    <!--    <textarea name="message" class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
                                             required="required"
                                             data-validation-required-message="Please enter your message"></textarea>
                                         <p class="help-block text-danger"></p>
+                                    -->
                                     </div>
                                     <div>
                                         <button class="btn btn-primary py-3 px-4" type="submit">Send Message</button>
@@ -455,26 +470,7 @@ leading to failure in application system.</p>
                 </div>
                 <!-- Contact End -->
                 
-                <form name="contact" method="POST" data-netlify="true">
-                    <p>
-                      <label>Your Name: <input type="text" name="name" /></label>   
-                    </p>
-                    <p>
-                      <label>Your Email: <input type="email" name="email" /></label>
-                    </p>
-                    <p>
-                      <label>Your Role: <select name="role[]" multiple>
-                        <option value="leader">Leader</option>
-                        <option value="follower">Follower</option>
-                      </select></label>
-                    </p>
-                    <p>
-                      <label>Message: <textarea name="message"></textarea></label>
-                    </p>
-                    <p>
-                      <button type="submit">Send</button>
-                    </p>
-                  </form>               
+                         
 
 
                 <!-- Footer Start -->
